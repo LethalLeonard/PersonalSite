@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-  zenytebros:
+  webserver:
     build: .
     ports:
       - "69.30.233.35:80:80"
