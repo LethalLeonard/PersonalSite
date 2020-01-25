@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Zenyte Bros Rust Server</title>
+	<meta name="description"
+		content="Welcome to Zenyte Bros! We are a Rust server, dedicated to our players.">
+	<meta property="og:title" content="Zenyte Bros">
+	<meta property="og:description"
+		content="Welcome to Zenyte Bros! We are a Rust server, dedicated to our players.">
+
+	<meta property="og:image" content="https://zenyte.com/assets/images/link-thumb.png">
+	<link href="Zenyte_files/icon.css" rel="stylesheet">
+	<link href="Zenyte_files/css.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="Zenyte_files/materialize.css">
+	<link rel="stylesheet" type="text/css" href="Zenyte_files/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="Zenyte_files/navbar.css">
+	<link rel="stylesheet" type="text/css" href="Zenyte_files/circle-charts.css">
+	<link rel="stylesheet" type="text/css" href="Zenyte_files/fontawesome-all.css">
+	<link rel="stylesheet" type="text/css" href="Zenyte_files/rework.css">
+
+	<script type="text/javascript" src="Zenyte_files/jquery-3.js"></script>
+	<script type="text/javascript" src="Zenyte_files/jquery.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body style="overflow-x:hidden;">
+	<div class="mobile-menu-main">
+
+		<div class="mobile-menu-links">
+			<a href="https://analytics.zenyte.com/">Home</a>
+			<a href="https://zenyte.com/">Zenyte Homepage</a>
+			<a id="closeMobileNav" class="mobile-menu-dl"><i class="material-icons left">arrow_back</i>Go back</a>
+		</div>
+
+	</div>
+
+	<div id="modal-wrapper">
+
+		<div class="openbtn">
+			<i class="material-icons left">list</i>
+		</div>
+
+		<div style="top: 15px" class="mobile-logo">
+			<center>
+				<a href="#">
+					<img src="Zenyte_files/logo-nav.png" class="img-fluid">
+				</a>
+			</center>
+		</div>
+		<div id="submenu">
+			<div class="sub-left"></div>
+			<div class="submenu"></div>
+			<div class="sub-right"></div>
+			<div class="submenu-content">
+				{site-links}
+				<div class="logo-newnav">
+					<a href="https://69.30.233.34/">
+						<img src="Zenyte_files/logo-nav.png" class="img-fluid">
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="temp-play">
+
+		</div>
+
+		<div class="content" id="main-content">
+			<div class="container" style="width:95%;">
+				{content}
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		$('#closeMobileNav').click(function () {
+			$('.mobile-menu-main').hide();
+			$('#modal-wrapper').show();
+		});
+
+		$('.openbtn').click(function () {
+			$('#modal-wrapper').hide();
+			$('.mobile-menu-main').show();
+		});
+	</script>
+
+	<script type="text/javascript" src="Zenyte_files/jquery_002.js"></script>
+	<script type="text/javascript" src="Zenyte_files/tether.js"></script>
+
+	<script type="text/javascript" src="Zenyte_files/materialize.js"></script>
+	<script type="text/javascript" src="Zenyte_files/custom.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>

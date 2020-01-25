@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  zenytebros:
+    build: .
+    ports:
+      - "69.30.233.35:80:80"
+      - "69.30.233.35:443:443"
+    volumes:
+      - type: volume
+        source: ./app
+        target: /app
+      - type: volume
+        source: ./docker/nginx.conf
+        target: /etc/nginx/sites-enabled/default:ro
